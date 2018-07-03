@@ -1,0 +1,396 @@
+{
+  "0x0000000000000000000000000000000000000017": [
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "_validator",
+                "type": "address"
+            }
+        ],
+        "name": "getValidatorSupportCount",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "getMaximumValidatorCount",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "getValidatorSupportDivisor",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_validator",
+                "type": "address"
+            }
+        ],
+        "name": "removeValidator",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_app_name",
+                "type": "bytes32"
+            },
+            {
+                "name": "_version_name",
+                "type": "bytes32"
+            },
+            {
+                "name": "_init",
+                "type": "address"
+            },
+            {
+                "name": "_init_sel",
+                "type": "bytes4"
+            },
+            {
+                "name": "_init_calldata",
+                "type": "bytes"
+            },
+            {
+                "name": "_fn_sels",
+                "type": "bytes4[]"
+            },
+            {
+                "name": "_fn_addrs",
+                "type": "address[]"
+            },
+            {
+                "name": "_version_desc",
+                "type": "bytes"
+            },
+            {
+                "name": "_init_desc",
+                "type": "bytes"
+            }
+        ],
+        "name": "deployConsensus",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_validator",
+                "type": "address"
+            }
+        ],
+        "name": "addValidator",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "getPendingValidatorCount",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "getFinalized",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "getValidatorCount",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [],
+        "name": "finalizeChange",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "getValidators",
+        "outputs": [
+            {
+                "name": "_validators",
+                "type": "address[]"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_validator",
+                "type": "address"
+            },
+            {
+                "name": "_block_number",
+                "type": "uint256"
+            },
+            {
+                "name": "_proof",
+                "type": "bytes"
+            }
+        ],
+        "name": "reportMalicious",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_validator",
+                "type": "address"
+            },
+            {
+                "name": "_block_number",
+                "type": "uint256"
+            }
+        ],
+        "name": "reportBenign",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "getPendingValidators",
+        "outputs": [
+            {
+                "name": "_validators",
+                "type": "address[]"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "masterOfCeremony",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_master_of_ceremony",
+                "type": "address"
+            },
+            {
+                "name": "_registry_storage",
+                "type": "address"
+            },
+            {
+                "name": "_init_registry",
+                "type": "address"
+            },
+            {
+                "name": "_app_console",
+                "type": "address"
+            },
+            {
+                "name": "_version_console",
+                "type": "address"
+            },
+            {
+                "name": "_impl_console",
+                "type": "address"
+            },
+            {
+                "name": "_consensus_init",
+                "type": "address"
+            },
+            {
+                "name": "_validator_console",
+                "type": "address"
+            },
+            {
+                "name": "_voting_console",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "validators",
+                "type": "address[]"
+            }
+        ],
+        "name": "ChangeFinalized",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "parent_hash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "name": "validators",
+                "type": "address[]"
+            }
+        ],
+        "name": "InitiateChange",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "registry",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "name": "registry_exec_id",
+                "type": "bytes32"
+            }
+        ],
+        "name": "InitializedRegistry",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "validator",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "name": "block_number",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "name": "malicious",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "name": "proof",
+                "type": "bytes"
+            }
+        ],
+        "name": "Report",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "supporter",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "name": "supported",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "name": "added",
+                "type": "bool"
+            }
+        ],
+        "name": "Support",
+        "type": "event"
+    }
+  ]
+}
