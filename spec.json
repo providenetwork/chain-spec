@@ -38,7 +38,6 @@
     "eip214Transition": "0x0",
     "eip658Transition": "0x0"
   },
-  "subprotocolName": "prvd",
   "accounts": {
     "0x0000000000000000000000000000000000000001": { "balance": "1", "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
     "0x0000000000000000000000000000000000000002": { "balance": "1", "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
